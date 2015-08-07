@@ -94,7 +94,7 @@ Ext.define("AppExemplo.view.common.SistemasCombo", {
 
 //Implementa as particularidades e herda do componente base[#5]
 Ext.define("AppExemplo.view.pessoas.SistemasCombo", {
-  extend: 'AppExemplo.view.pessoas.SistemasCombo',
+  extend: 'AppExemplo.view.common.SistemasCombo',
   alias: ['widget.pessoassistemascombo']
   .
   .
@@ -103,7 +103,7 @@ Ext.define("AppExemplo.view.pessoas.SistemasCombo", {
 
 //Implementa as particularidades e herda do componente base[#5]
 Ext.define("AppExemplo.view.compras.SistemasCombo", {
-  extend: 'AppExemplo.view.compras.SistemasCombo',
+  extend: 'AppExemplo.view.common.SistemasCombo',
   alias: ['widget.comprassistemascombo']
   .
   .
