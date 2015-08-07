@@ -57,7 +57,7 @@ initComponent: function() {
       |_ SistemasCombo.js
 ```
 
-####Quando compras.PessoasCombo.js tem o mesmo comportamento de pessoas.Combo.js, com pequenas individualidades
+######Quando compras.PessoasCombo.js tem o mesmo comportamento de pessoas.Combo.js, com pequenas individualidades
 -
 ```javascript
 //Herda do componente base[#5]
@@ -70,7 +70,7 @@ Ext.define("AppExemplo.view.compras.PessoasCombo", {
 });
 ```
 
-####Quando compras.SistemasCombo.js tem o mesmo comportamento de pessoas.SistemasCombo.js, com pequenas individualidades, porém SistemasCombo é de outra natureza
+#####Quando compras.SistemasCombo.js tem o mesmo comportamento de pessoas.SistemasCombo.js, com pequenas individualidades, porém SistemasCombo é de outra natureza
 -
 
 ```javascript
