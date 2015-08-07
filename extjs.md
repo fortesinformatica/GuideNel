@@ -60,6 +60,7 @@ initComponent: function() {
 ####Quando compras.PessoasCombo.js tem o mesmo comportamento de pessoas.Combo.js, com pequenas individualidades
 -
 ```javascript
+//Herda do componente base[#5]
 Ext.define("AppExemplo.view.compras.PessoasCombo", {
   extend: 'AppExemplo.view.pessoas.Combo',
   alias: ['widget.compraspessoascombo']
@@ -71,3 +72,44 @@ Ext.define("AppExemplo.view.compras.PessoasCombo", {
 
 ####Quando compras.SistemasCombo.js tem o mesmo comportamento de pessoas.SistemasCombo.js, com pequenas individualidades, porém SistemasCombo é de outra natureza
 -
+
+```javascript
+- AppExemplo
+  |_ model
+  |_ view
+    |_ common
+      |_ SistemasCombo.js
+    |_ pessoas
+      |_ Combo.js
+      |_ SistemasCombo.js
+    |_ compras
+      |_ PessoasCombo.js
+      |_ SistemasCombo.js
+      
+//Extrai o componente base para o pacote common[#5]
+Ext.define("AppExemplo.view.common.SistemasCombo", {
+  extend: 'Ext.combo.Combo',
+  alias: ['widget.commonsistemascombo']
+  .
+  .
+  .
+});
+
+//Implementa as particularidades e herda do componente base[#5]
+Ext.define("AppExemplo.view.pessoas.SistemasCombo", {
+  extend: 'AppExemplo.view.pessoas.SistemasCombo',
+  alias: ['widget.pessoassistemascombo']
+  .
+  .
+  .
+});
+
+//Implementa as particularidades e herda do componente base[#5]
+Ext.define("AppExemplo.view.compras.SistemasCombo", {
+  extend: 'AppExemplo.view.compras.SistemasCombo',
+  alias: ['widget.comprassistemascombo']
+  .
+  .
+  .
+});
+```
