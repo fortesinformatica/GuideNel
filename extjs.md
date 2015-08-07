@@ -45,5 +45,29 @@ initComponent: function() {
 ```
 
 ##Herança de componentes visuais
-se A é um combo de sistemas e B também, só que em outro contexto com suas peculiaridades, ele pode ser extendido sim.
-Já para reaproveitar código apenas para remover a duplicação, devemos criar um C com o código similar e tanto A quanto B devem extender C.
+```javascript
+- AppExemplo
+  |_ model
+  |_ view
+    |_ pessoas
+      |_ Combo.js
+      |_ SistemasCombo.js
+    |_ compras
+      |_ PessoasCombo.js
+      |_ SistemasCombo.js
+```
+
+####Quando compras.PessoasCombo.js tem o mesmo comportamento de pessoas.Combo.js, com pequenas individualidades
+-
+```javascript
+Ext.define("AppExemplo.view.compras.PessoasCombo", {
+  extend: 'AppExemplo.view.pessoas.Combo',
+  alias: ['widget.compraspessoascombo']
+  .
+  .
+  .
+});
+```
+
+####Quando compras.SistemasCombo.js tem o mesmo comportamento de pessoas.SistemasCombo.js, com pequenas individualidades, porém SistemasCombo é de outra natureza
+-
