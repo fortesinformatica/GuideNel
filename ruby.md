@@ -1,7 +1,7 @@
 Ruby
 =
+##Indentação de métodos aninhados [[#4]](https://github.com/fortesinformatica/GuideNel/issues/4)
 
-##Indentação de métodos aninhados## 
 * com o ponto antes do nome do método e não na linha anterior
 * com parâmetros longos quebrados em linhas mais semânticas
 
