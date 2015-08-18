@@ -1,7 +1,7 @@
 iReport
 =
 
-##Quando não houver dados
+##Quando não houver dados##
 #####1. Clica no nó raiz do Report Inspector#####
 ![Passo 1](http://i.imgur.com/a9y0BwN.png)
 #####2. Seta a aba do "when no data" em Propriedades#####
