@@ -1,7 +1,7 @@
 Ext.JS
 =
 
-##+ Estrutura de um arquivo de view
+##Estrutura de um arquivo de view##
 
 ```javascript
 Ext.define('<NOME_DO_APP_EM_CAMEL_CASE>.view.<PACOTE_EM_MINUSCULO>.<SUBPACOTE_QUANDO_HOUVER_EM_MINUSCULO>.<CLASSE_DO_COMPONENTE_EM_CAMEL_CASE>', {
@@ -44,7 +44,7 @@ initComponent: function() {
 }
 ```
 
-##+ Herança de componentes visuais
+##Herança de componentes visuais##
 ```javascript
 - AppExemplo
   |_ model
@@ -57,7 +57,7 @@ initComponent: function() {
       |_ SistemasCombo.js
 ```
 
-######Quando compras.PessoasCombo.js tem o mesmo comportamento de pessoas.Combo.js, com pequenas individualidades
+######Quando compras.PessoasCombo.js tem o mesmo comportamento de pessoas.Combo.js, com pequenas individualidades######
 ```javascript
 //Herda do componente base[#5]
 Ext.define("AppExemplo.view.compras.PessoasCombo", {
@@ -69,7 +69,7 @@ Ext.define("AppExemplo.view.compras.PessoasCombo", {
 });
 ```
 
-#####Quando compras.SistemasCombo.js tem o mesmo comportamento de pessoas.SistemasCombo.js, com pequenas individualidades, porém SistemasCombo é de outra natureza
+#####Quando compras.SistemasCombo.js tem o mesmo comportamento de pessoas.SistemasCombo.js, com pequenas individualidades, porém SistemasCombo é de outra natureza######
 ```javascript
 - AppExemplo
   |_ model
