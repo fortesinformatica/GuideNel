@@ -2,12 +2,12 @@
 
 Small collection of best practices and patterns for projects.
 
-Mobile                   | Server Side     | Web
--------------------------|-----------------|------
-[android](android.md)    | [aws](aws.md)   | [ext.js](extjs.md)
-[ios](ios.md)        |  [ireport](ireport.md)      | [java script](js.md)
-                         |                 | [node](node.md)
-                         |                 | [ruby](ruby.md)
+Mobile                   | Server Side            | Web                          | Projetos
+-------------------------|------------------------|------------------------------|----------
+[android](android.md)    | [aws](aws.md)          | [ext.js](extjs.md)           |[atlas](atlas.md)
+[ios](ios.md)            |  [ireport](ireport.md) | [java script](js.md)         |[leitor 10](leitor10.md)
+                         |                        | [node](node.md)              |
+                         |                        | [ruby](ruby.md)              |
                          
 ## Contributing
 
